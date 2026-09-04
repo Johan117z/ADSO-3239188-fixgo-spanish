@@ -24,20 +24,20 @@ current status (under construction / in production / legacy).
 
 **Suggested format:**
 ```markdown
-## What is [FixGO]?
-[FixGo es una plataforma móvil en tiempo real diseñada para conectar instantáneamente a los conductores varados con talleres mecánicos y de asistencia en carretera cercanos. Agiliza las reparaciones vehiculares de emergencia al ofrecer una coincidencia precisa de geolocalización y un manejo seguro de solicitudes digitales.]
+## What is FixGO?
+FixGo es una plataforma móvil en tiempo real diseñada para conectar instantáneamente a los conductores varados con talleres mecánicos y de asistencia en carretera cercanos. Agiliza las reparaciones vehiculares de emergencia al ofrecer una coincidencia precisa de geolocalización y un manejo seguro de solicitudes digitales.
 
 ## Problem it solves
-[Los conductores que experimentan  fallas  mecánicas inesperadas se enfrentan a graves retrasos, carecen de formas fiables de encontrar talleres abiertos cercanos y tienen dificultades para obtener rápidamente asistencia en carretera confiable. Los mecánicos también pierden clientes locales debido a la mala visibilidad digital y al envío manual ineficiente.]
+Los conductores que experimentan  fallas  mecánicas inesperadas se enfrentan a graves retrasos, carecen de formas fiables de encontrar talleres abiertos cercanos y tienen dificultades para obtener rápidamente asistencia en carretera confiable. Los mecánicos también pierden clientes locales debido a la mala visibilidad digital y al envío manual ineficiente.
 
 ## Main users
-- [Conductores]: [Solicite asistencia en carretera inmediata, realice un seguimiento de la ubicación del mecánico en tiempo real y administre perfiles de servicio.]
-- [Mecánica]: [Reciba solicitudes de servicios de emergencia, acepte trabajos basados en la proximidad y administre ofertas de diagnóstico en el sitio.]
+- Conductores: Solicite asistencia en carretera inmediata, realice un seguimiento de la ubicación del mecánico en tiempo real y administre perfiles de servicio.
+- Mecánica: Reciba solicitudes de servicios de emergencia, acepte trabajos basados en la proximidad y administre ofertas de diagnóstico en el sitio.
 
 ## Technology stack
-- Backend: [Java/maven]
-- Database: [Base de datos en tiempo real Firebase / SQL]
-- Infrastructure: [Implementación basada en la nube con estándares de seguridad AES-256]
+- Backend: Java/maven
+- Database: Base de datos en tiempo real Firebase / SQL
+- Infrastructure: Implementación basada en la nube con estándares de seguridad AES-256
 ```
 
 ### `scope.md` ⭐
@@ -47,23 +47,23 @@ This prevents scope creep (the system that grows without control).
 
 **Format:**
 ```markdown
-## In scope (MVP)
-- [Registro de perfiles de conductores y mecánicos con Firebase authentication. ]
-- [Rastreo de geolocalización en tiempo real con un objetivo de precisión de 15 metros.]
-- [Emparejamiento automatizado de solicitudes de servicio con un SLA de respuesta de 3 segundos.]
-- [Protección de datos del cliente utilizando estándares de cifrado AES-256.]
+## In scope MVP
+- Registro de perfiles de conductores y mecánicos con Firebase authentication. 
+- Rastreo de geolocalización en tiempo real con un objetivo de precisión de 15 metros.
+- Emparejamiento automatizado de solicitudes de servicio con un SLA de respuesta de 3 segundos.
+- Protección de datos del cliente utilizando estándares de cifrado AES-256.
 
-## Out of scope (MVP)
-- [Procesamiento de pagos dentro de la aplicación y transacciones financieras.]
-- [Venta directa de repuestos automotrices o mercancía física.]
-- [Contratar o emplear directamente  mecánicos por parte de FixGo.]
-- [Provisión de grúas físicas por parte de la plataforma.]
+## Out of scope MVP
+- Procesamiento de pagos dentro de la aplicación y transacciones financieras.
+- Venta directa de repuestos automotrices o mercancía física.
+- Contratar o emplear directamente  mecánicos por parte de FixGo.
+- Provisión de grúas físicas por parte de la plataforma.
 
 ## Candidates for future versions
-- [Pasarelas de pago integradas con tarjetas de crédito, billeteras digitales.]
-- [Chat dentro de la aplicación y llamadas VoIP entre conductores y mecánicos.]
-- [Un sistema de calificación y reseñas de usuarios para mecánicos y talleres.]
-- [Reservas de mantenimiento programado y diagnósticos preventivos.]
+- Pasarelas de pago integradas con tarjetas de crédito, billeteras digitales.
+- Chat dentro de la aplicación y llamadas VoIP entre conductores y mecánicos.
+- Un sistema de calificación y reseñas de usuarios para mecánicos y talleres.
+- Reservas de mantenimiento programado y diagnósticos preventivos.
 ```
 
 ### `glossary.md` ⭐
@@ -84,12 +84,12 @@ If two people define "client" differently, the system will have bugs.
 
 ### `_template-project-profile.md`
 
-Nombre Oficial del Proyecto: FixGo
-Líder Técnico: Johan Andres Liñan Esquivel 
-Equipo de Desarrollo: Gabriel Tijaro, Juan David Romero
-Fecha de Inicio: Septiembre 2026
-Hito Objetivo: 7 meses desde inicio
-Interesados: SENA Programa ADSO, Conductores, Mecánicos, Dueños de Talleres
+- Nombre Oficial del Proyecto: FixGo.
+- Líder Técnico: Johan Andres Liñan Esquivel. 
+- Equipo de Desarrollo: Gabriel Tijaro, Juan David Romero.
+- Fecha de Inicio: Septiembre 2026.
+- Hito Objetivo: 7 meses desde inicio.
+- Interesados: SENA Programa ADSO, Conductores, Mecánicos, Dueños de Talleres.
 
 
 ### `_template-scope-declaration.md`
