@@ -84,10 +84,41 @@ If two people define "client" differently, the system will have bugs.
 
 ### `_template-project-profile.md`
 Project technical sheet for internal records.
-**Fill in:** when the project is formalized (official name, tech lead, dates, stakeholders).
+Nombre Oficial del Proyecto: FixGo
+Líder Técnico: Johan Andres Liñan Esquivel 
+Equipo de Desarrollo: Gabriel Tijaro, Juan David Romero
+Fecha de Inicio: Septiembre 2026
+Hito Objetivo: 7 meses desde inicio
+Interesados: SENA Programa ADSO, Conductores, Mecánicos, Dueños de Talleres
+
 
 ### `_template-scope-declaration.md`
-Formal scope declaration template for presentations or deliverables.
+Objetivo Principal: Plataforma móvil de emparejamiento en tiempo real para conectar conductores varados con mecánicos locales para reparaciones en sitio.
+Incluye MVP:
+Registro y autenticación vía Firebase.
+Rastreo GPS en tiempo real con objetivo de precisión de 15 metros.
+Despacho automatizado de solicitudes tiempo de respuesta p95 < 3 segundos.
+Protección de datos con cifrado AES-256.
+Aplicación móvil básica y consola mínima de monitoreo.
+
+Excluye MVP:
+Procesamiento de pagos.
+Venta de repuestos automotrices.
+Contratación directa de mecánicos.
+Provisión de grúas físicas.
+
+Criterios de Verificación:
+Pruebas de campo para métricas de precisión GPS.
+Monitoreo de SLA en dashboard umbral p95.
+Auditoría de seguridad para el cumplimiento del cifrado AES-256.
+
+Supuestos y Dependencias:
+Disponibilidad continua de los servicios de Firebase.
+Conectividad de red móvil estable para los usuarios.
+Precisión variable del hardware GPS en distintos dispositivos móviles.
+
+Responsables: Líder técnico: Johan; Equipo: Gabriel, Juan David Romero.
+
 
 ---
 
