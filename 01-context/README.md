@@ -143,6 +143,19 @@ Responsables: Líder técnico: Johan; Equipo: Gabriel, Juan David Romero.
 ## Questions this section must answer
 
 - What does this system exist for?
+FixGo existe para conectar de forma inmediata y fiable a conductores varados con mecánicos y altos locales capacidades de atender reparaciones en sitio. Su objetivo es reducir los tiempos de espera en emergencias, facilitar la localización de asistencia disponible y mejorar la eficiencia del despacho y la visibilidad digital de torres locales.
+
 - Who are the users?
+  Conductores personas que solicitan asistencia en carretera y usan la aplicación para crear solicitudes,Mecánicos o Talleres,Operadores y propietarios de talleres que utilizan la plataforma para obtener clientes.
+  
 - What does the system NOT do?
+ No procesa pagos, No contrata ni emplea mecánicos directamente la plataforma facilita el contacto solamente, no vende repuestos, tampoco contrata mecanicos, no cuenta con gruas o otros elementos mecanicos.
+  
 - What does [term X] mean in this project?
+Solicitud: el registro creado por un conductor que contiene ubicación, descripción de la avería y datos de contacto; inicia el proceso de emparejamiento.
+
+Emparejamiento: el proceso algorítmico que asigna la solicitud al mecánico/taller más adecuado, siguiendo reglas de proximidad, disponibilidad y SLA.
+
+SLA o Objetivo de Nivel de Servicio: objetivo de rendimiento acordado para el sistema en el MVP, el tiempo de despacho objetivo es p95 < 3 s.
+
+GPS: datos de localización enviados por el dispositivo del conductor para permitir la asignación y el seguimiento del mecánico.
