@@ -83,7 +83,7 @@ If two people define "client" differently, the system will have bugs.
 ```
 
 ### `_template-project-profile.md`
-Project technical sheet for internal records.
+
 Nombre Oficial del Proyecto: FixGo
 Líder Técnico: Johan Andres Liñan Esquivel 
 Equipo de Desarrollo: Gabriel Tijaro, Juan David Romero
