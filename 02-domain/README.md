@@ -41,19 +41,31 @@ Map of all bounded contexts and how they relate.
 
 **Format:**
 ```markdown
-## Bounded Contexts
+## Contextos Delimitados
 
-### [Context Name]
-**Responsibility:** [what this context manages]
-**Main entities:** [list]
-**Owning team:** [team]
+### [Gestión de Usuarios]
+**Responsabilidad:** Gestiona registros de usuarios, definiciones de roles, perfiles y autenticación de Firebase tanto para conductores como para mecánicos.
+**Entidades principales:** Driver, Mechanic, UserProfile, AuthenticationCredential
+**Equipo responsable:** Johan Andrés Liñan Esquivel, Juan David Romero Calderon, Gabriel Tijaro Jimenez y Mateo Esteban Ramirez Garzon
 
-## Relationship map
-[ASCII diagram or description of how the contexts relate]
+### Matchmaking y Despacho
+**Responsabilidad:** Maneja el seguimiento de geolocalización en tiempo real, cálculos de precisión de 15 metros y el emparejamiento algorítmico de solicitudes de avería de conductores con talleres cercanos.
+**Entidades principales:** ServiceRequest, GPSLocation, MatchResult, WorkshopAvailability
+**Equipo responsable:** Juan David Romero Calderon, Johan Andrés Liñan Esquivel, Gabriel Tijaro Jimenez y Mateo Esteban Ramirez Garzon
 
-| Context A | Relationship | Context B | Description |
-|-----------|-------------|-----------|-------------|
-| [A] | downstream-of | [B] | [A] consumes events from [B] |
+### Ejecución de Servicio
+**Responsabilidad:** Gestiona el ciclo de vida de la reparación en sitio, incluidas las actualizaciones de diagnóstico, confirmación de servicio y seguimiento de estado.
+**Entidades principales:** Diagnostic, ServiceSession, RepairStatus, CompletionRecord
+**Equipo responsable:** Gabriel Tijaro Jimenez, Johan Andrés Liñan Esquivel, Juan David Romero Calderon y Mateo Esteban Ramirez Garzon
+
+## Mapa de relaciones
+[[Gestión de Usuarios] --------> [Matchmaking y Despacho] --------> [Ejecución de Servicio]
+  (Proporciona perfiles)         (Consume perfiles y GPS)         (Consume resultados de emparejamiento)]
+
+| Contexto A | Relación | Contexto B | Descripción |
+|------------|----------|------------|-------------|
+| [Matchmaking y Despacho] | downstream-of | [Gestión de Usuarios] | Matchmaking consume datos de perfiles de conductores y mecánicos para validar participantes activos. |
+| [Ejecución de Servicio] | downstream-of | [Matchmaking y Despacho] | La ejecución de servicio toma el relevo una vez que se establecen una coincidencia exitosa y la confirmación del despacho. |
 ```
 
 ### `entities-and-rules.md` ⭐
