@@ -86,7 +86,7 @@ If two people define "client" differently, the system will have bugs.
 
 - Nombre Oficial del Proyecto: FixGo.
 - Líder Técnico: Johan Andres Liñan Esquivel. 
-- Equipo de Desarrollo: Gabriel Tijaro, Juan David Romero.
+- Equipo de Desarrollo: Gabriel Tijaro, Juan David Romero y Mateo Ramirez.
 - Fecha de Inicio: Septiembre 2026.
 - Hito Objetivo: 7 meses desde inicio.
 - Interesados: SENA Programa ADSO, Conductores, Mecánicos, Dueños de Talleres.
